@@ -50,6 +50,26 @@ This project focuses on building and evaluating a 3D Object Detection pipeline u
    pip install -r requirements.txt
    ```
 
+## 📦 Requirements
+
+The following Python packages are required to run the project:
+
+```txt
+numpy
+scipy
+matplotlib
+open3d
+pillow
+torch
+torchvision
+tqdm
+h5py
+jupyter
+notebook
+```
+
+You can also install them manually using pip or Conda.
+
 ---
 
 ## 🧪 Models Used
@@ -68,6 +88,7 @@ This project focuses on building and evaluating a 3D Object Detection pipeline u
 ---
 
 ## 🔗 References
+- [Core 3D Object Detection Concepts](./docs/Core_3D_Object_Detection_Concepts.md)
 
 - SUN RGB-D Dataset: http://rgbd.cs.princeton.edu/
 - VoteNet GitHub: https://github.com/facebookresearch/votenet

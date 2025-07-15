@@ -20,6 +20,7 @@ This roadmap outlines the goals, activities, and deliverables for a 3-week immer
 - Download and explore the SUN RGB-D dataset
 
 ### ✅ Tasks
+- [X] Understand core 3D Object Detection concepts ([read concepts](./docs/Core_3D_Object_Detection_Concepts.md))
 - [ ] Install Python, Conda, PyTorch
 - [ ] Install Open3D, Matplotlib, SciPy, NumPy
 - [ ] Download SUN RGB-D dataset
