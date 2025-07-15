@@ -1,0 +1,19 @@
+name: sunrgbd3d
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - scipy
+  - matplotlib
+  - open3d
+  - pillow
+  - h5py
+  - tqdm
+  - jupyter
+  - notebook
+  - pip:
+      - torch
+      - torchvision

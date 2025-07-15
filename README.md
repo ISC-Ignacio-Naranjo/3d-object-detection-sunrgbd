@@ -49,6 +49,12 @@ This project focuses on building and evaluating a 3D Object Detection pipeline u
    ```bash
    pip install -r requirements.txt
    ```
+   Alternatively, you can create the environment using the provided `environment.yml` file:
+
+```bash
+conda env create -f environment.yml
+conda activate sunrgbd3d
+```
 
 ## 📦 Requirements
 

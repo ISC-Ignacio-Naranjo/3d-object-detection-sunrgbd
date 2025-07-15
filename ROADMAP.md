@@ -21,8 +21,9 @@ This roadmap outlines the goals, activities, and deliverables for a 3-week immer
 
 ### ✅ Tasks
 - [X] Understand core 3D Object Detection concepts ([read concepts](./docs/Core_3D_Object_Detection_Concepts.md))
-- [ ] Install Python, Conda, PyTorch
-- [ ] Install Open3D, Matplotlib, SciPy, NumPy
+- [X] Install Python, Conda, PyTorch
+- [X] Install Open3D, Matplotlib, SciPy, NumPy
+- [X] Create the Conda environment using `environment.yml` file
 - [ ] Download SUN RGB-D dataset
 - [ ] Load `.mat` annotation files with `scipy.io.loadmat`
 - [ ] Visualize RGB images and depth maps
