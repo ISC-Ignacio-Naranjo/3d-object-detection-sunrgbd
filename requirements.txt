@@ -1,0 +1,11 @@
+numpy
+scipy
+matplotlib
+open3d
+pillow
+torch
+torchvision
+tqdm
+h5py
+jupyter
+notebook
