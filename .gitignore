@@ -10,3 +10,6 @@ build/
 .venv
 .ipynb_checkpoints/
 .DS_Store
+# Ignore dataset
+data/
+

@@ -24,7 +24,19 @@ This roadmap outlines the goals, activities, and deliverables for a 3-week immer
 - [X] Install Python, Conda, PyTorch
 - [X] Install Open3D, Matplotlib, SciPy, NumPy
 - [X] Create the Conda environment using `environment.yml` file
-- [ ] Download SUN RGB-D dataset
+- [X] Download SUN RGB-D dataset
+###  Milestone: Data Acquisition
+
+**Notebook:** `01_download_data.ipynb`  
+
+- Dataset will be stored under: `data/SUNRGBD/`
+- Includes RGB images, depth maps, calibration, and 3D/2D annotations
+- Download source: [http://rgbd.cs.princeton.edu](http://rgbd.cs.princeton.edu)
+
+Next step once downloaded:
+- Validate dataset structure
+- Parse sample annotations to confirm integrity
+
 - [ ] Load `.mat` annotation files with `scipy.io.loadmat`
 - [ ] Visualize RGB images and depth maps
 - [ ] Generate point clouds from depth
