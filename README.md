@@ -102,6 +102,60 @@ You can also install them manually using pip or Conda.
 
 ---
 
+
 ## 📁 License
 
 This project is for academic and research purposes.
+
+
+## 🚀 Quick Start (macOS/Linux) Auto Setup: VS Code + Conda + Jupyter
+
+You can launch the project environment, open VS Code, and start Jupyter Notebook with one command:
+
+```bash
+./scripts/run_env.sh
+```
+
+This script does the following:
+
+1. Activates the Conda environment `sunrgbd3d`
+2. Navigates to the project folder
+3. Opens VS Code in the correct path
+4. Launches Jupyter Notebook
+
+---
+
+### 🛠️ Setup Instructions
+
+If this is your first time:
+
+1. Make the script executable:
+
+```bash
+chmod +x ./scripts/run_env.sh
+```
+
+2. (Optional) Add a shell alias to your `.zshrc`:
+
+```bash
+alias open3d="$HOME/Documents/Proyectos\ IA/UTSA/3d-object-detection-sunrgbd/scripts/run_env.sh"
+```
+
+Then run:
+
+```bash
+source ~/.zshrc
+```
+
+Now you can just type `open3d` from anywhere to launch everything.
+
+---
+
+### 💡 VS Code Extensions Required
+
+Make sure to install these extensions:
+
+- Python (`ms-python.python`)
+- Jupyter (`ms-toolsai.jupyter`)
+
+You'll be prompted to install them when you open a `.ipynb` file in VS Code for the first time.
