@@ -149,6 +149,50 @@ source ~/.zshrc
 
 Now you can just type `open3d` from anywhere to launch everything.
 
+## ▶️ Run Instructions (Environment & Notebooks)
+
+### 1. Activate the Conda environment
+```bash
+open3d
+conda activate sunrgbd3d
+```
+
+### 2. Launch Jupyter Lab or Notebook
+```bash
+jupyter lab
+# or
+jupyter notebook
+```
+
+> ✅ Make sure the selected kernel is:  
+> `Python 3.x.x ('sunrgbd3d': conda)`
+
+---
+
+### 3. Test Open3D installation
+To verify Open3D is working correctly:
+```python
+import open3d as o3d
+print(o3d.__version__)
+```
+
+You should see output like:
+```
+0.19.0
+```
+
+---
+
+### 4. Run notebooks
+Navigate to the `notebooks/` folder and open:
+
+- `02_prepare_data.ipynb` – Load and explore dataset
+- `03_visualize_3D_bounding_boxes.ipynb` – Render all 3D boxes
+
+---
+
+> ℹ️ If `code .` doesn't work in terminal, you may need to [reinstall VS Code shell command](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
+
 ---
 
 ### 💡 VS Code Extensions Required
