@@ -6,86 +6,71 @@ This roadmap outlines the goals, activities, and deliverables for a 3-week immer
 
 ## ✅ Progress Tracker
 
-- [ ] Week 1 - Fundamentals + Dataset Exploration
+- [X] Week 1 - Fundamentals + Dataset Exploration
 - [ ] Week 2 - Model Training and Evaluation
 - [ ] Week 3 - Optimization + Final Report
 
 ---
+## 🧭 3D Object Detection Roadmap (SUN RGB-D)
 
-## 📅 Week 1: Fundamentals + Environment Setup + Dataset Exploration
+### Week 1 – Fundamentals + Dataset Exploration ✅
 
-### 🎯 Goals
-- Understand core 3D Object Detection concepts
-- Set up the development environment
-- Download and explore the SUN RGB-D dataset
+#### Phase 1: Understand Core Concepts ✅
+- [x] What is 3D Object Detection?
+- [x] 2D vs 3D Object Detection
+- [x] Point clouds and RGB-D data
+- [x] Bounding boxes (Axis-Aligned vs Oriented)
+- [x] Common datasets (SUN RGB-D, KITTI, ScanNet)
 
-### ✅ Tasks
-- [X] Understand core 3D Object Detection concepts ([read concepts](./docs/Core_3D_Object_Detection_Concepts.md))
-- [X] Install Python, Conda, PyTorch
-- [X] Install Open3D, Matplotlib, SciPy, NumPy
-- [X] Create the Conda environment using `environment.yml` file
-- [X] Download SUN RGB-D dataset
-###  Milestone: Data Acquisition
+#### Phase 2: Environment Setup ✅
+- [x] Create GitHub repo: `3d-object-detection-sunrgbd`
+- [x] Create and activate `sunrgbd3d` Conda environment (macOS M1)
+- [x] Add `README.md`, `ROADMAP.md`, and `requirements`
+- [x] Configure Jupyter kernel with Conda env
 
-**Notebook:** `01_download_data.ipynb`  
+#### Phase 3: Dataset Preparation ✅
+- [x] Download SUN RGB-D dataset (~6.4GB)
+- [x] Handle download interruption / resume
+- [x] Extract dataset and verify structure
+- [x] Load metadata from `SUNRGBDMeta3DBB_v2.mat`
 
-- Dataset will be stored under: `data/SUNRGBD/`
-- Includes RGB images, depth maps, calibration, and 3D/2D annotations
-- Download source: [http://rgbd.cs.princeton.edu](http://rgbd.cs.princeton.edu)
-
-Next step once downloaded:
-- Validate dataset structure
-- Parse sample annotations to confirm integrity
-
-- [ ] Load `.mat` annotation files with `scipy.io.loadmat`
-- [ ] Visualize RGB images and depth maps
-- [ ] Generate point clouds from depth
-- [ ] Draw 3D bounding boxes
-
----
-
-## 📅 Week 2: Modeling and Training
-
-### 🎯 Goals
-- Train a base model (VoteNet)
-- Evaluate and visualize detection results
-
-### ✅ Tasks
-- [ ] Clone VoteNet repository
-- [ ] Configure dataset preprocessing for SUN RGB-D
-- [ ] Train VoteNet on SUN RGB-D
-- [ ] Evaluate performance (mAP@0.25, IoU 3D)
-- [ ] Visualize predicted bounding boxes vs. ground truth
+#### Phase 4: 3D Bounding Box Visualization ✅
+- [x] Explore sample structure: `.rgbpath`, `.depthpath`, `.groundtruth3DBB`
+- [x] Fix path issues for local dataset use
+- [x] Visualize 3D boxes for a sample using Open3D
+- [x] Assign consistent color per class (`box.classname`)
+- [x] Commit: `03_visualize_3D_bounding_boxes.ipynb`
 
 ---
 
-## 📅 Week 3: Optimization + Analysis + Presentation
+### Week 2 – Model Training and Evaluation 🚧
 
-### 🎯 Goals
-- Analyze and improve model results
-- Prepare final deliverables
+#### Phase 5: RGB-D Point Cloud Construction
+- [ ] Load RGB and depth images using OpenCV and PIL
+- [ ] Retrieve camera intrinsics matrix `K`
+- [ ] Generate RGB-D image with Open3D
+- [ ] Create point cloud from RGB-D image
+- [ ] Overlay point cloud with 3D bounding boxes
 
-### ✅ Tasks
-- [ ] Analyze performance by object class
-- [ ] Identify failure cases and difficult scenes
-- [ ] (Optional) Try RGB+Depth fusion or fine-tuning
-- [ ] Prepare final slides/report
-- [ ] Include visualizations and metrics
-- [ ] Prepare project README and documentation
+#### Phase 6: Dataset Conversion (if needed)
+- [ ] Convert annotations to custom format (e.g., JSON or KITTI style)
+- [ ] Organize data splits (train/val/test)
 
----
-
-## 🎁 Final Deliverables
-
-- [ ] Code repository (clean, documented)
-- [ ] Trained model
-- [ ] Visualizations of results
-- [ ] Final report (PDF/Word)
-- [ ] Presentation (Slides)
+#### Phase 7: Baseline Model Training
+- [ ] Choose baseline architecture (PointNet++, VoteNet, etc.)
+- [ ] Prepare data loader and augmentations
+- [ ] Train on small subset of SUN RGB-D
+- [ ] Monitor loss and validation results
 
 ---
 
-## 📌 Notes
+### Week 3 – Optimization + Final Report 🚧
 
-- Update this file weekly to track your progress.
-- Link each completed task to relevant logs, notebooks, or visual outputs.
+#### Phase 8: Model Evaluation
+- [ ] Compute mAP, IoU, and class-wise performance
+- [ ] Visualize predictions vs ground truth
+
+#### Phase 9: Reporting and Documentation
+- [ ] Finalize notebooks and code structure
+- [ ] Document key learnings, challenges, and ideas for future work
+- [ ] Write final README summary + tech report
