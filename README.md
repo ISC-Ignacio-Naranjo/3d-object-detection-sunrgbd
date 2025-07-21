@@ -159,3 +159,16 @@ Make sure to install these extensions:
 - Jupyter (`ms-toolsai.jupyter`)
 
 You'll be prompted to install them when you open a `.ipynb` file in VS Code for the first time.
+
+### NoteBooks
+
+📘 03_visualize_3D_bounding_boxes.ipynb
+This notebook visualizes all 3D bounding boxes for a selected sample from the SUN RGB-D dataset:
+
+✅ Loads and parses the .mat metadata file.
+
+✅ Renders all oriented 3D bounding boxes for a sample using Open3D.
+
+🎨 Assigns a unique color to each object class (e.g., bed, chair, sofa) using a hash-based coloring function.
+
+🧩 Sets up for further steps like point cloud overlay and interactive scene exploration.
